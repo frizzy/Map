@@ -24,17 +24,7 @@ use InvalidArgumentException;
 class Map extends MapAbstract
 {
     private $items = array();
-    
-    /**
-     * Construct
-     *
-     * @param array|Iterator $map Map
-     */
-    public function __construct($items = array())
-    {
-        $this->replace($items);
-    }
-    
+        
     /**
      * Set
      *
