@@ -27,6 +27,16 @@ use ArrayIterator;
 abstract class MapAbstract implements Countable, ArrayAccess, IteratorAggregate, MapInterface
 {
     /**
+     * Construct
+     *
+     * @param array|Iterator $map Map
+     */
+    public function __construct($items = array())
+    {
+        $this->replace($items);
+    }
+    
+    /**
      * Normalize offset
      *
      * @param scalar $offset Offset
